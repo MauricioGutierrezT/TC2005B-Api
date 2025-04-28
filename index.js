@@ -9,7 +9,7 @@ import usersRoutes from "./routes/users.routes.js";
     console.log('The solution is: ', results)
   }); */
 const app = express();
-
+app.use(express.json())
 app.use(indexRoutes);
 app.use(usersRoutes);
 
